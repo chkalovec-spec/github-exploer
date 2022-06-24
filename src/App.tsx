@@ -1,6 +1,5 @@
 import React from 'react'
-import { LocalStorageKeys } from './constants'
-import { useLocalStorage } from './hooks'
+import './app.css'
 
 export const App: React.FC = () => {
   return (
