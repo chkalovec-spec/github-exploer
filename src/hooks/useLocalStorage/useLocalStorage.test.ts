@@ -6,7 +6,7 @@ describe('useLocalStorage', () => {
     window.localStorage.clear()
   })
 
-  it('Если в хранилище нет значения, то будет возвращено начальное значение', () => {
+  it('should return initial value when local storage does not contain this value', () => {
     const testValues = {
       key: 'testKey',
       value: 'initialTestValue',
@@ -18,7 +18,7 @@ describe('useLocalStorage', () => {
     expect(value).toBe(testValues.value)
   })
 
-  it('Если в хранилище есть значение, то будет возвращено это значение', () => {
+  it('should return value from local storage after set value in local storage', () => {
     const testValues = {
       key: 'testKey',
       value: 'value',
@@ -31,7 +31,7 @@ describe('useLocalStorage', () => {
     expect(value).toBe(testValues.value)
   })
 
-  it('Новое значение корректно записывается в хранилище', async () => {
+  it('should set value in local storage', async () => {
     const testValues = {
       key: 'testKey',
       value: 'initialTestValue',
